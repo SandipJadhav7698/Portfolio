@@ -1,38 +1,193 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  background-image: url("F:\my-project-Portfolio\my-project-Portfolio\portfolio\src\images\project.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  display: flex;
+  list-style-type: none;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li {
+  margin-left: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+form {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+}
+
+input, textarea, button {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+.container{
+  width: 100%;
+}
+.img{
+height: 300px;
+width: 300px;  
+}
+
+/*new code*/
+
+/* Parallax Sections */
+.parallax-sections {
+  position: relative;
+}
+
+.parallax-section {
+  min-height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 100px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.parallax-section:nth-child(odd) {
+  background-color: #f8f9fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.parallax-section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Section Specific Styles */
+#introduction, #projects, #skills, #contact {
+  padding: 4rem 0;
+}
+
+
+/* Parallax Effect Enhancements */
+.parallax-inner {
+  will-change: transform;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .parallax-section {
+    padding: 60px 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.header, .introduction, .skills, .projects, .contact {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.header {
+  background-image: url("F:\my-project-Portfolio\my-project-Portfolio\portfolio\src\images\project.jpg");
+}
+
+.introduction {
+  background-image: url('path/to/intro-background.jpg');
+}
+
+.skills {
+  background-image: url('path/to/skills-background.jpg');
+}
+
+.projects {
+  background-image: url('path/to/projects-background.jpg');
+}
+
+.contact {
+  background-image: url('path/to/contact-background.jpg');
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*New Code*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contact-parallax {
+  overflow: hidden;
+}
+
+/*Header Code*/
+.header-parallax {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+/*project Section*/
+.projects-parallax {
+  overflow: hidden;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
 }

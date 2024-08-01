@@ -1,0 +1,53 @@
+/*.projects-section {
+    background-color: #f8f9fa;
+      position: relative;
+      background-image: url('F:\my-project-Portfolio\my-project-Portfolio\portfolio\src\images\Project1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+  }*/
+  
+  .project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
